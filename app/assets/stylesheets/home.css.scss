@@ -26,6 +26,7 @@ header {
 
 section {
   padding:1em;
+  margin-bottom:2em;
   background:white;
   @include border-radius(0.5em, 0.5em);
   border:1px solid silver;

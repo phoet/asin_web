@@ -1,3 +1,42 @@
+%section#installation
+  %h2 Installation:
+  
+  %p
+    Installing ASIN for Rails 3.1 is easy. Just put it into your 
+    %code Gemfile:
+    
+  ~ CodeRay.highlight_file(Rails.root.join('Gemfile')).html_safe
+    
+  %p
+    ASIN has a modular setup and is built on top of the HTTP adapter library
+    = link_to 'HTTPI.', 'http://github.com/rubiii/httpi'
+    Since
+    = link_to 'HTTPClient', 'https://github.com/nahi/httpclient'
+    is my favourite HTTP library, i put this into the 
+    %code Gemfile
+    too.
+
+%section#configuration
+  %h2 Configuration:
+  
+  %p
+    The most common way of configuring ASIN is via a Rails initializer like this
+    %code asin.rb
+    file:
+  
+  ~ CodeRay.highlight_file(Rails.root.join('config', 'initializers', 'asin.rb')).html_safe
+  
+  %p
+    I am used to read the config-vars from the 
+    %code ENV
+    because it's the best way to configure stuff on
+    = link_to 'Heroku.', 'http://heroku.com'
+    
+  %p
+    Beeing a lazy programmer, I tend to put the configuration of HTTPI into the same file.
+
+
+
 %section#item_lookup
   %h2 Item Lookup:
 

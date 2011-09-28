@@ -3,3 +3,7 @@ ASIN::Configuration.configure do |config|
   config.key            = ENV['ASIN_KEY']
   config.associate_tag  = ENV['ASIN_TAG']
 end
+
+require 'httpi'
+HTTPI.adapter = :httpclient
+HTTPI.logger  = Rails.logger
