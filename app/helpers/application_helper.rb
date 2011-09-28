@@ -8,32 +8,10 @@ module ApplicationHelper
   end
   
   def nav_items
-    {
-      'installation'  => 'Installation',
-      'configuration' => 'Configuration',
-      'item_lookup'   => 'Item Lookup',
-      'item_search'   => 'Item Search',
-      'add_cart'      => 'Add Cart',
-    }
+    ['install', 'config', 'lookup', 'search', 'cart']
   end
   
-  def code_scan(key, type=:ruby)
-    CodeRay.highlight(self.class.const_get("CODE_#{key.upcase}".to_s), type).html_safe
+  def cite(text)
+    content_tag(:cite, "\"#{text}\"")
   end
-  
-  CODE_GEM_INSTALL = <<-CODE
-gem install asin
-# optional dependencies
-gem install httpclient
-gem install rash
-    CODE
-  
-  CODE_GEMFILE_INSTALL = <<-CODE
-# Gemfile
-gem 'asin'
-# optional dependencies
-gem 'httpclient'
-gem 'rash'
-    CODE
-
 end

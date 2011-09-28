@@ -1,5 +1,5 @@
-%section#installation
-  %h2 Installation:
+%section#install
+  %h2 Install:
   
   %p
     Installing ASIN for Rails 3.1 is easy. Just put it into your 
@@ -16,8 +16,8 @@
     %code Gemfile
     too.
 
-%section#configuration
-  %h2 Configuration:
+%section#config
+  %h2 Config:
   
   %p
     The most common way of configuring ASIN is via a Rails initializer like this
@@ -35,11 +35,31 @@
   %p
     Beeing a lazy programmer, I tend to put the configuration of HTTPI into the same file.
 
-
-
 %section#item_lookup
-  %h2 Item Lookup:
+  %h2 Lookup:
 
-  %ul
-    - @items.each do |item|
-      %li= item.title
+  %p
+    The
+    %code ASIN::Client#lookup
+    method is the simplest form of accessing the Amazon API:
+    
+  ~ CodeRay.highlight_file(Rails.root.join('lib', 'lookup_example.rb')).html_safe
+  
+  %p
+    The result of this query is:
+    = cite @lookup_title
+
+%section#search
+  %h2 Search:
+  
+  %p
+    The
+    %code ASIN::Client#search_keywords
+    methods excepts one or more keywords to search against the Amazon book index:
+    
+  ~ CodeRay.highlight_file(Rails.root.join('lib', 'search_example.rb')).html_safe
+  
+  %p
+    Resulting in a list of Ruby and Ruby on Rails titles:
+    = @search_titles.map { |title| cite title}.join(', ').html_safe
+  

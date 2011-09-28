@@ -20,7 +20,7 @@
         %h3= subtitle
       %nav
         %ul
-          - nav_items.each do |key, name|
+          - nav_items.each do |nav|
             %li
-              %a{href: "##{key}"}= name
+              %a{href: "##{nav}"}= nav
       = yield

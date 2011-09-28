@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    client = ASIN::Client.instance
-    @items = client.lookup '1430218150'
+    @lookup_title = LookupExample.new.lookup_item_title
+    @search_titles = SearchExample.new.search_ruby_titles
   end
 end
