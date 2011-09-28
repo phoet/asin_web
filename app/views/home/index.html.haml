@@ -35,7 +35,7 @@
   %p
     Beeing a lazy programmer, I tend to put the configuration of HTTPI into the same file.
 
-%section#item_lookup
+%section#lookup
   %h2 Lookup:
 
   %p
@@ -62,4 +62,31 @@
   %p
     Resulting in a list of Ruby and Ruby on Rails titles:
     = @search_titles.map { |title| cite title}.join(', ').html_safe
+
+%section#cart
+  %h2 Cart:
   
+  %p
+    With the
+    %code ASIN::Client#*_cart
+    methods, you get a convenient layer to access your virtual shopping cart:
+  
+  ~ CodeRay.highlight_file(Rails.root.join('lib', 'cart_example.rb')).html_safe
+  
+  %p
+    This query would result in a checkout deeplink to the Amazon page for
+    = link_to @lookup_title, @checkout_url
+
+%section#node
+  %h2 Node:
+  
+  %p
+    If you are interested in accessing Amazon browse nodes, you should have a look at the
+    %code ASIN::Client#browse_node
+    method:
+
+  ~ CodeRay.highlight_file(Rails.root.join('lib', 'node_example.rb')).html_safe
+  
+  %p
+    In this case, the name of the node is:
+    = cite @node_name

@@ -8,7 +8,7 @@ module ApplicationHelper
   end
   
   def nav_items
-    ['install', 'config', 'lookup', 'search', 'cart']
+    ['install', 'config', 'lookup', 'search', 'cart', 'node']
   end
   
   def cite(text)

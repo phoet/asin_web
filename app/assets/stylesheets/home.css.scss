@@ -16,12 +16,31 @@ body {
 
 #content {
   margin:auto;
-  padding:4em;
   width:80%;
 }
 
 header {
   text-align:center;
+  margin-bottom:2em;
+}
+
+footer {
+  padding:1em;
+  margin-top:2em;
+  background:white;
+  @include border-top-left-radius(0.5em);
+  @include border-top-right-radius(0.5em);
+  border-top:1px solid silver;
+  border-left:1px solid silver;
+  border-right:1px solid silver;
+  text-align:center;
+  font-family:'Holtwood One SC', serif;
+  font-size:1em;
+  
+  a {
+    padding-left:25px;
+    background:url('https://secure.gravatar.com/avatar/056c32203f8017f075ac060069823b66?s=20') 0px 3px no-repeat;
+  }
 }
 
 section {
@@ -33,6 +52,7 @@ section {
 }
 
 nav {
+  margin:2em;
   text-align:center;
   ul {
     border:0 none;
