@@ -1,0 +1,12 @@
+%p
+  With the
+  %code ASIN::Client#*_cart
+  methods, you get a convenient layer to access your virtual shopping cart:
+
+~ highlight('lib/cart_example.rb')
+
+%p
+  This query of the method
+  %code CartExample#checkout_url
+  results in a checkout deeplink to the Amazon page:
+  = link_to @lookup_title, @checkout_url

@@ -1,0 +1,12 @@
+%p
+  The
+  %code ASIN::Client#search_keywords
+  methods excepts one or more keywords to search against the Amazon book index:
+  
+~ highlight('lib/search_example.rb')
+
+%p
+  Calling
+  %code SearchExample#search_ruby_titles
+  results in a list of Ruby and Ruby on Rails titles:
+  = @search_titles.map { |title| cite title}.join(', ').html_safe

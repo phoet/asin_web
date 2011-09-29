@@ -1,92 +1,11 @@
-%section#install
-  %h2 Install:
-  
-  %p
-    Installing ASIN for Rails 3.1 is easy. Just put it into your 
-    %code Gemfile:
-    
-  ~ CodeRay.highlight_file(Rails.root.join('Gemfile')).html_safe
-    
-  %p
-    ASIN has a modular setup and is built on top of the HTTP adapter library
-    = link_to 'HTTPI.', 'http://github.com/rubiii/httpi'
-    Since
-    = link_to 'HTTPClient', 'https://github.com/nahi/httpclient'
-    is my favourite HTTP library, i put this into the 
-    %code Gemfile
-    too.
+= section :install
 
-%section#config
-  %h2 Config:
-  
-  %p
-    The most common way of configuring ASIN is via a Rails initializer like this
-    %code asin.rb
-    file:
-  
-  ~ CodeRay.highlight_file(Rails.root.join('config', 'initializers', 'asin.rb')).html_safe
-  
-  %p
-    I am used to read the config-vars from the 
-    %code ENV
-    because it's the best way to configure stuff on
-    = link_to 'Heroku.', 'http://heroku.com'
-    
-  %p
-    Beeing a lazy programmer, I tend to put the configuration of HTTPI into the same file.
+= section :config
 
-%section#lookup
-  %h2 Lookup:
+= section :lookup
 
-  %p
-    The
-    %code ASIN::Client#lookup
-    method is the simplest form of accessing the Amazon API:
-    
-  ~ CodeRay.highlight_file(Rails.root.join('lib', 'lookup_example.rb')).html_safe
-  
-  %p
-    The result of this query is:
-    = cite @lookup_title
+= section :search
 
-%section#search
-  %h2 Search:
-  
-  %p
-    The
-    %code ASIN::Client#search_keywords
-    methods excepts one or more keywords to search against the Amazon book index:
-    
-  ~ CodeRay.highlight_file(Rails.root.join('lib', 'search_example.rb')).html_safe
-  
-  %p
-    Resulting in a list of Ruby and Ruby on Rails titles:
-    = @search_titles.map { |title| cite title}.join(', ').html_safe
+= section :cart
 
-%section#cart
-  %h2 Cart:
-  
-  %p
-    With the
-    %code ASIN::Client#*_cart
-    methods, you get a convenient layer to access your virtual shopping cart:
-  
-  ~ CodeRay.highlight_file(Rails.root.join('lib', 'cart_example.rb')).html_safe
-  
-  %p
-    This query would result in a checkout deeplink to the Amazon page for
-    = link_to @lookup_title, @checkout_url
-
-%section#node
-  %h2 Node:
-  
-  %p
-    If you are interested in accessing Amazon browse nodes, you should have a look at the
-    %code ASIN::Client#browse_node
-    method:
-
-  ~ CodeRay.highlight_file(Rails.root.join('lib', 'node_example.rb')).html_safe
-  
-  %p
-    In this case, the name of the node is:
-    = cite @node_name
+= section :node

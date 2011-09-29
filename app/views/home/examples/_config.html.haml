@@ -1,0 +1,15 @@
+%p
+  The most common way of configuring ASIN is via a Rails initializer like this
+  %code asin.rb
+  file:
+
+~ highlight('config/initializers/asin.rb')
+
+%p
+  I am used to read the config-vars from the 
+  %code ENV
+  because it's the best way to configure stuff on
+  = link_to 'Heroku.', 'http://heroku.com'
+  
+%p
+  Beeing a lazy programmer, I tend to put the configuration of HTTPI into the same file.
