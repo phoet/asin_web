@@ -1,0 +1,5 @@
+%nav
+  %ul
+    - ['install', 'config', 'lookup', 'search', 'cart', 'node'].each do |nav|
+      %li
+        %a{href: "##{nav}"}= nav
