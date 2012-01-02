@@ -1,0 +1,4 @@
+/* TEAM */
+Author: Peter Schröder
+Site: http://phoet.de
+Twitter: @phoet
