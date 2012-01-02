@@ -12,6 +12,6 @@ gem "coderay",      "1.0.5"
 
 group :assets do
   gem "compass",      "0.12.alpha.3"
-  gem "sass-rails",   "3.2.2"
+  gem 'sass-rails',   git: 'https://github.com/rails/sass-rails.git', branch: '3-2-stable'
   gem "uglifier",     "1.2.1"
 end
