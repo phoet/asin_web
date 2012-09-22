@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "rails",        "~> 3.2"
 
-gem "asin",         "~> 0.7"
+gem "asin",         "~> 1.0"
 gem "httpclient",   "~> 2.2"
 
 gem "haml",         "~> 3.1"
