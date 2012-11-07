@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "compass";
-@import "compass/css3/border-radius";
-
 html {
   background:url('/assets/bg.png') left top repeat;
 }
@@ -28,15 +25,13 @@ footer {
   padding:1em;
   margin-top:2em;
   background:white;
-  @include border-top-left-radius(0.5em);
-  @include border-top-right-radius(0.5em);
   border-top:1px solid silver;
   border-left:1px solid silver;
   border-right:1px solid silver;
   text-align:center;
   font-family:'Holtwood One SC', serif;
   font-size:1em;
-  
+
   a {
     padding-left:25px;
     background:url('https://secure.gravatar.com/avatar/056c32203f8017f075ac060069823b66?s=20') 0px 3px no-repeat;
@@ -47,7 +42,6 @@ section {
   padding:1em;
   margin-bottom:2em;
   background:white;
-  @include border-radius(0.5em, 0.5em);
   border:1px solid silver;
 }
 
@@ -67,8 +61,8 @@ nav {
     float:left;
     background:white;
     border:1px solid silver;
-    @include border-radius(0.2em, 0.2em);
-    
+    // @include border-radius(0.2em, 0.2em);
+
     a, a:hover, a:active, a:visited {
       text-decoration:none;
       color:silver;
@@ -99,7 +93,6 @@ h3 {
 code {
   color:gray;
   background-color: #F8F4DD;
-  @include border-radius(3px, 3px);
   border:1px solid rgba(0, 0, 0, 0.15);
 }
 
