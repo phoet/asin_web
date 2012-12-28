@@ -1,5 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
+require "rails"
 require "action_controller/railtie"
 require "sprockets/railtie"
 
@@ -13,7 +14,7 @@ module AsinWeb
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    # config.autoload_paths += %W(#{config.root}/lib)
+    # config.autoload_paths += %W(#{config.root}/extras)
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
