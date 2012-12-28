@@ -17,6 +17,7 @@ module ApplicationHelper
   end
 
   def highlight(file)
-    CodeRay.highlight_file(Rails.root.join(file)).html_safe
+    file = Rails.root.join(file)
+    CodeRay.highlight_file(file).html_safe
   end
 end
