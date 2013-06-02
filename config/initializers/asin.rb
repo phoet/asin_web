@@ -5,5 +5,5 @@ ASIN::Configuration.configure do |config|
 end
 
 require 'httpi'
-HTTPI.adapter = :httpclient
+HTTPI.adapter = :curb
 HTTPI.logger  = Rails.logger
