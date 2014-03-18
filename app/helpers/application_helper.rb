@@ -16,8 +16,12 @@ module ApplicationHelper
     content_tag(:section, content_tag(:h2, "#{key.capitalize}:") + render("home/examples/#{key}", key: key), id: key)
   end
 
+  def highlight_css
+    Rouge::Themes::Github.render(:scope => '.highlight').html_safe
+  end
+
   def highlight(file)
-    file = Rails.root.join(file)
-    CodeRay.highlight_file(file).html_safe
+    source = File.read(Rails.root.join(file))
+    Rouge.highlight(source, 'ruby', 'html').html_safe
   end
 end
