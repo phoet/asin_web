@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def highlight_css
-    Rouge::Themes::Github.render(:scope => '.highlight').html_safe
+    Rouge::Themes::Github.render(scope: '.highlight').html_safe
   end
 
   def highlight(file)

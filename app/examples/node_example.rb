@@ -5,6 +5,6 @@ class NodeExample
 
   def node_name
     node_id = '599826'
-    @client.browse_node(node_id, :ResponseGroup => :TopSellers).first.name
+    @client.browse_node(node_id, ResponseGroup: :TopSellers).first.name
   end
 end
