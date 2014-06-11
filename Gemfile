@@ -1,9 +1,10 @@
 source "http://rubygems.org"
-ruby "2.1.0"
+ruby "2.1.1"
 
-gem "rails",    "4.0.4"
+gem "rails",    "4.1.1"
 
 gem "asin",     "~> 2.0"
+gem "httpi",    "2.1.0"
 gem "curb",     "~> 0.8"
 
 gem "haml",     "~> 4.0"
