@@ -1,5 +1,6 @@
 html {
   background:image-url('bg.png') left top repeat;
+  font-family: arial;
 }
 
 body {
@@ -16,6 +17,22 @@ body {
 header {
   text-align:center;
   margin:0;
+}
+
+p {
+  code {
+    background-color:lightyellow;
+    font-style:italic;
+    padding:0.25em;
+    color:darkgray;
+  }
+}
+
+a:visited {
+  color:lightgray;
+}
+a:hover {
+  color:gray;
 }
 
 footer {
@@ -87,13 +104,15 @@ h3 {
   font-size:1.5em;
 }
 
-.highlight {
-  padding: 0.5em;
+pre {
+  padding:0.5em;
 }
 
 cite {
   color:gray;
   font-style:italic;
+  padding:0.25em;
+  font-size:smaller;
 }
 
 .button {

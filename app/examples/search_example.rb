@@ -4,6 +4,6 @@ class SearchExample
   end
 
   def search_ruby_titles
-    @client.search_keywords('ruby', 'rails').map { |item| item.item_attributes.title.truncate(25) }
+    @client.search_keywords('ruby', 'rails').map { |item| item.item_attributes.title }
   end
 end
