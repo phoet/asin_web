@@ -11,6 +11,8 @@
     %link{rel: "author", href: "humans.txt"}
 
     = csrf_meta_tag
+    = action_cable_meta_tag
+    = javascript_include_tag "application"
     = stylesheet_link_tag "application", media: "all"
     = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Holtwood+One+SC'
     %style
