@@ -4,6 +4,5 @@ ASIN::Configuration.configure do |config|
   config.associate_tag  = ENV['ASIN_TAG']
 end
 
-require 'httpi'
 HTTPI.adapter = :curb
 HTTPI.logger  = Rails.logger

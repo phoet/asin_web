@@ -7,6 +7,6 @@
 
 %p
   This query of the method
-  %code CartExample#checkout_url
+  %code= link_to 'CartExample#checkout_url', 'https://github.com/phoet/asin_web/blob/master/app/examples/cart_example.rb'
   results in a checkout deeplink to the Amazon page:
   = link_to "Purchase Me", @checkout_url, class: 'button'
