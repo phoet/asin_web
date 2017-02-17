@@ -1,10 +1,10 @@
 module ApplicationHelper
   def title
-    "ASIN-WEB"
+    'ASIN-WEB'
   end
 
   def subtitle
-    "examples using the ASIN gem"
+    'examples using the ASIN gem'
   end
 
   def section(key)
