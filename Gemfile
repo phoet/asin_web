@@ -9,6 +9,6 @@ gem 'curb',       '~> 0.8'
 
 gem 'haml',       '~> 4.0'
 gem 'rouge',      '~> 1.3'
-gem 'memo-it',    '~> 0.3'
+gem 'memo-it',    '~> 0.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier',   '~> 3.0'
