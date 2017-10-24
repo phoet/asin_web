@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 ruby   '2.4.2'
 
-gem 'rails',      '~> 5.0'
+gem 'rails',      '~> 5.1'
+gem 'erubis',     '~> 2.7'
 gem 'puma',       '~> 3.6'
 
 gem 'asin',       '~> 2.0'
