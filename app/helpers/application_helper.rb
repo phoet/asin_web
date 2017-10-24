@@ -17,7 +17,11 @@ module ApplicationHelper
   end
 
   def highlight(file)
-    source = File.read(Rails.root.join(file))
-    Rouge.highlight(source, 'ruby', 'html').html_safe
+    content_tag(:div, class: 'highlight') do
+      source = File.read(Rails.root.join(file))
+      formatter = Rouge::Formatters::HTMLLegacy.new
+      lexer = Rouge::Lexers::Ruby.new
+      formatter.format(lexer.lex(source)).html_safe
+    end
   end
 end
