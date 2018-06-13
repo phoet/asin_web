@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
-ruby   '2.4.2'
+ruby   '2.5.0'
 
-gem 'rails',      '~> 5.1'
+gem 'rails',      '~> 5.2'
 gem 'erubis',     '~> 2.7'
 gem 'puma',       '~> 3.6'
 
 gem 'asin',       '~> 2.0'
-gem 'curb',       '~> 0.8'
 
 gem 'haml',       '~> 5.0'
 gem 'rouge',      '~> 3.0'

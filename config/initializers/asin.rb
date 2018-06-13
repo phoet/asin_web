@@ -4,6 +4,3 @@ ASIN::Configuration.configure do |config|
   config.associate_tag  = ENV['ASIN_TAG']
   config.host           = ENV['ASIN_HOST'] || 'webservices.amazon.de'
 end
-
-HTTPI.adapter = :curb
-HTTPI.logger  = Rails.logger
