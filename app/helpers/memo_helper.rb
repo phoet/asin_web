@@ -6,7 +6,8 @@ module MemoHelper
   end
 
   def search_titles
-    Memo::It.memo { SearchExample.new.search_ruby_titles }
+    titles = Memo::It.memo { SearchExample.new.search_ruby_titles }
+    titles.map { |word| word.truncate(30) }.to_sentence
   rescue
     "an error occured: #{$!}"
   end
