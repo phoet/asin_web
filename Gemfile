@@ -3,7 +3,7 @@ ruby   '3.0.1'
 
 gem 'rails',      '~> 6.0'
 gem 'erubis',     '~> 2.7'
-gem 'puma',       '~> 3.6'
+gem 'puma',       '~> 4.3'
 
 gem 'asin',       '~> 2.0'
 
