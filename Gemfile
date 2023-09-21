@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby   '3.2.0'
+ruby   '3.2.2'
 
 gem 'rails',      '~> 6.0'
 gem 'erubis',     '~> 2.7'
