@@ -73,7 +73,7 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.2.3)
     confiture (0.1.4)
-    crack (0.4.6)
+    crack (1.0.0)
       bigdecimal
       rexml
     crass (1.0.6)
