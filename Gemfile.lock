@@ -95,8 +95,7 @@ GEM
     crass (1.0.6)
     date (3.3.4)
     domain_name (0.6.20240107)
-    drb (2.2.0)
-      ruby2_keywords
+    drb (2.2.1)
     erubi (1.12.0)
     erubis (2.7.0)
     execjs (2.9.1)
@@ -119,10 +118,10 @@ GEM
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    i18n (1.14.1)
+    i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.11.2)
+    irb (1.12.0)
       rdoc
       reline (>= 0.4.2)
     llhttp-ffi (0.5.0)
@@ -136,7 +135,7 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.0.3)
+    marcel (1.0.4)
     memo-it (0.5.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
@@ -208,7 +207,6 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     rouge (3.30.0)
-    ruby2_keywords (0.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
