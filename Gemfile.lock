@@ -84,7 +84,7 @@ GEM
       http (>= 3.0)
       snake_case_hash (>= 1.0.2)
     base64 (0.2.0)
-    bigdecimal (3.1.7)
+    bigdecimal (3.1.8)
     builder (3.2.4)
     concurrent-ruby (1.2.3)
     confiture (0.1.4)
@@ -118,10 +118,10 @@ GEM
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    i18n (1.14.4)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.13.0)
+    irb (1.13.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     llhttp-ffi (0.5.0)
@@ -141,7 +141,7 @@ GEM
     mini_portile2 (2.8.6)
     minitest (5.22.3)
     mutex_m (0.2.0)
-    net-imap (0.4.10)
+    net-imap (0.4.11)
       date
       net-protocol
     net-pop (0.1.2)
@@ -150,7 +150,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.1)
+    nio4r (2.7.3)
     nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -203,7 +203,7 @@ GEM
       ffi (~> 1.0)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
-    reline (0.5.4)
+    reline (0.5.5)
       io-console (~> 0.5)
     rexml (3.2.6)
     rouge (3.30.0)
