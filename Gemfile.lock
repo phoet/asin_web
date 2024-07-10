@@ -260,4 +260,4 @@ DEPENDENCIES
   uglifier (~> 3.0)
 
 RUBY VERSION
-   ruby 3.3.3
+   ruby 3.3.4
