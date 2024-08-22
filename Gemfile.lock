@@ -136,7 +136,7 @@ GEM
     memo-it (0.5.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
-    minitest (5.25.0)
+    minitest (5.25.1)
     net-imap (0.4.14)
       date
       net-protocol
@@ -201,7 +201,7 @@ GEM
       psych (>= 4.0.0)
     reline (0.5.9)
       io-console (~> 0.5)
-    rexml (3.3.5)
+    rexml (3.3.6)
       strscan
     rouge (3.30.0)
     sass (3.7.4)
