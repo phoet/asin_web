@@ -199,7 +199,7 @@ GEM
       ffi (~> 1.0)
     rdoc (6.7.0)
       psych (>= 4.0.0)
-    reline (0.5.9)
+    reline (0.5.10)
       io-console (~> 0.5)
     rexml (3.3.7)
     rouge (3.30.0)
@@ -217,7 +217,7 @@ GEM
     securerandom (0.3.1)
     snake_case_hash (1.0.4)
       hashie (~> 3.0)
-    sprockets (3.7.3)
+    sprockets (3.7.4)
       base64
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
