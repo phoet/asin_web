@@ -295,7 +295,7 @@ DEPENDENCIES
   uglifier (~> 3.0)
 
 RUBY VERSION
-   ruby 3.4.4
+   ruby 3.4.7
 
 BUNDLED WITH
    2.6.2
