@@ -164,7 +164,7 @@ GEM
     psych (5.4.0)
       date
       stringio
-    puma (5.6.9)
+    puma (8.0.2)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.23)
@@ -287,7 +287,7 @@ DEPENDENCIES
   haml (~> 5.0)
   listen
   memo-it (~> 0.4)
-  puma (~> 5.6)
+  puma (~> 8.0)
   rack-cache
   rails (~> 7.0)
   rouge (~> 3.0)
